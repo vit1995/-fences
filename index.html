@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241120102005">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top top-header ">
+					<div class="top-header__logo-body">
+						<a href="#" class="top-header__logo">
+							<img src="img/header/logo.svg" alt="#">
+						</a>
+						<!-- <p class="top-header__text">заборные блоки в Москве и области</p> -->
+					</div>
+					<div data-da=".menu, 479.98" class="top-header__buttons">
+						<a class="top-header__number" href="tel:74991103352">+7 499 110-33-52</a>
+						<div class="top-header__button-body button-body">
+							<a data-popup="#popup" class="top-header__button button">
+								Быстрый заказ
+							</a>
+						</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+				</div>
+				<div class="header__menu menu">
+					<a href="#" class="menu__logo-mob"><img src="img/header/logo-mob.svg" alt="#"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto=".concrete" href="#" class="menu__link">Описание блоков</a>
+							</li>
+							<li class="menu__item"><a data-goto=".advantages" href="#" class="menu__link">Преимущества</a></li>
+							<li class="menu__item"><a data-goto=".opportunity" href="#" class="menu__link">Скидка</a></li>
+							<li class="menu__item"><a data-goto=".catalog" href="#" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a data-goto=".questions" href="#" class="menu__link">Вопросы</a></li>
+							<li class="menu__item"><a data-goto=".reviews" href="#" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a data-goto=".gallery" href="#" class="menu__link">Галерея</a></li>
+							<li class="menu__item"><a data-goto=".contacts" href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img src="img/popup/01.svg" alt="#"></button>
+					<h2 class="popup__title">Хотите быстро оформить заказ?</h2>
+					<div class="popup__text-popup">
+						Оставьте заявку, наш специалист свяжется с вами и рассчитает стоимость заборных блоков на ваш участок
+					</div>
+					<form data-popup-message="#popup-message" data-ajax class="popup__form" action="files/sendmail/sendmail.php" method="POST">
+
+						<div class="popup__item">
+							<label class="popup__label">Как мы можем к вам обращаться?</label>
+							<input data-required type="text" name="form[email]" data-error="Заполните поля" placeholder="Ваше имя" class="popup__input input">
+						</div>
+						<div class="popup__item">
+
+							<label class="popup__label">Введите ваш номер телефона</label>
+							<input data-required id="phone" type="text" name="form[phone]" data-error="Заполните поля" placeholder="+375 (__) ___-__-__" class="popup__input form-opportunity__input input">
+						</div>
+						<div class="popup__button-body button-body button-body--hit">
+							<button type="submit" class="popup__button button button--catalog  button--hit">Быстрый заказ</button>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="popup-two" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img src="img/popup/01.svg" alt="#"></button>
+					<h2 class="popup__title">Наш консультант ответит на Ваши вопросы</h2>
+					<div class="popup__text-popup">
+						Для этого заполните поля ниже и ожидайте звонка
+					</div>
+					<form data-popup-message="#popup-message" data-ajax class="popup__form" action="files/sendmail/sendmail.php" method="POST">
+
+						<div class="popup__item">
+							<label class="popup__label">Как мы можем к вам обращаться?</label>
+							<input data-required type="text" name="form[email]" data-error="Заполните поля" placeholder="Ваше имя" class="popup__input input">
+						</div>
+						<div class="popup__item">
+
+							<label class="popup__label">Введите ваш номер телефона</label>
+							<input data-required id="phone" type="text" name="form[phone]" data-error="Заполните поля" placeholder="+375 (__) ___-__-__" class="popup__input form-opportunity__input input">
+						</div>
+						<div class="popup__button-body button-body button-body--hit">
+							<button type="submit" class="popup__button button button--catalog  button--hit">Отправить</button>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="video" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content--video">
+					<!-- <button data-close type="button" class="popup__close"><img src="img/popup/01.svg" alt="#"></button> -->
+					<div class="popup__text">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-calc" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content--calc popup__content--video">
+					<button data-close type="button" class="popup__close popup__close--calc"><img src="img/popup/01.svg" alt="#"></button>
+
+				</div>
+			</div>
+		</div>
+		<div id="popup-message" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img src="img/popup/01.svg" alt="#"></button>
+					<h2 class="popup__title">Спасибо! ваше форма отправлена</h2>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__hero hero">
+				<img class="hero__image" src="img/hero/01.png" alt="#">
+
+				<div class="hero__container">
+					<h2 class="hero__title">Заборные блоки от белорусского завода <strong>GARD</strong> <span>Европейская
+							технология производства</span>с гарантией 5 лет </h2>
+					<div class="hero__body">
+						<div class="hero__content">
+							<ul class="hero__list">
+								<li class="hero__link">Изготавливаем по польской технологии, геометрия <strong>по
+										госту</strong></li>
+								<li class="hero__link">Используем бетон увеличенной прочности <strong>B25</strong>. Стойкие к
+									влаге, огню, морозу и коррозии</li>
+
+								<li class="hero__link">Даём гарантию <strong>5 лет</strong>. Срок службы до <strong>50
+										лет</strong></li>
+
+								<li class="hero__link">Доставим за<strong> 3–5 дней</strong></li>
+
+							</ul>
+							<div class="hero__button-body button-body">
+								<a data-goto=".calculator" href="#" class="hero__button  button"> Узнать стоимость</a>
+							</div>
+						</div>
+						<div class="hero__advertising advertising-hero">
+							<h2 class="advertising-hero__title">Ответьте на вопросы и получите расчёт стоимости заборных
+								блоков+ полезные статьи</h2>
+							<p class="advertising-hero__text">“Как выбрать заборные блоки?”</p>
+							<p class="advertising-hero__text">“Почему выбирают наши блоки GARD?”</p>
+							<img data-watch data-watch-once class="advertising-hero__image" src="img/hero/present.png" alt="#">
+							<img class="advertising-hero__image-arrow" src="img/hero/arow.svg" alt="#">
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section data-da=".popup__content--calc, 768" class="page__calculator calculator">
+				<div class="calculator__container ">
+					<div class="calculator__body">
+						<div id="calc" class="slide-calculator__slide-calculator slide-calculator-block">
+							<h4 class="slide-calculator-block__title"><svg class="mdi-icon mdi-24px" viewBox="0 0 24 24">
+									<path d="M17,21L14.25,18L15.41,16.84L17,18.43L20.59,14.84L21.75,16.25M12.8,21H5C3.89,21 3,20.11 3,19V5C3,3.89 3.89,3 5,3H19C20.11,3 21,3.89 21,5V12.8C20.39,12.45 19.72,12.2 19,12.08V5H5V19H12.08C12.2,19.72 12.45,20.39 12.8,21M12,17H7V15H12M14.68,13H7V11H17V12.08C16.15,12.22 15.37,12.54 14.68,13M17,9H7V7H17" stroke-width="0" fill-rule="nonzero"></path>
+								</svg>Рассчитайте стоимость грядок за 1 минуту!</h4>
+						</div>
+						<div id="calc-last" class="slide-calculator__slide-calculator slide-calculator-block calc-last">
+
+
+						</div>
+						<!-- Оболонка слайдера -->
+						<div class="calculator__slider swiper swiper-container">
+							<!-- Частина слайдера, що рухається -->
+							<form data-popup-message="#popup-message" data-ajax="" action="files/sendmail/sendmail.php" class="calculator__wrapper swiper-wrapper">
+								<!-- 1 Слайд -->
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<h5 class="slide-calculator__title">Какой цвет заборных блоков Вам нужен??</h5>
+										<div class="options">
+											<div class="options__item">
+												<input data-required id="o_1" class="options__input input" type="radio" value="1" name="option">
+												<label for="o_1" class="options__label">
+													<div class="options__text"><img src="img/calc/01.webp" alt="#"></div>
+
+												</label>
+												<h3 class="options__title">Дым</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_2" class="options__input input" type="radio" value="2" name="option">
+												<label for="o_2" class="options__label">
+													<div class="options__text"><img src="img/calc/02.webp" alt="#"></div>
+												</label>
+												<h3 class="options__title">Артика</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_3" class="options__input input" type="radio" value="1" name="option">
+												<label for="o_3" class="options__label">
+													<div class="options__text"><img src="img/calc/03.webp" alt="#"></div>
+												</label>
+												<h3 class="options__title">Шоколад</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_4" class="options__input input" type="radio" value="2" name="option">
+												<label for="o_4" class="options__label">
+													<div class="options__text"><img src="img/calc/04.webp" alt="#"></div>
+												</label>
+												<h3 class="options__title">Сангрия</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_5" class="options__input input" type="radio" value="2" name="option">
+												<label for="o_5" class="options__label">
+													<div class="options__text"><img src="img/calc/05.webp" alt="#"></div>
+												</label>
+												<h3 class="options__title">Техас</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_6" class="options__input input" type="radio" value="2" name="option">
+												<label for="o_6" class="options__label">
+													<div class="options__text"><img src="img/calc/06.webp" alt="#"></div>
+												</label>
+												<h3 class="options__title">Мардо</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_7" class="options__input input" type="radio" value="2" name="option">
+												<label for="o_7" class="options__label">
+													<div class="options__text"><img src="img/calc/07.webp" alt="#"></div>
+												</label>
+												<h3 class="options__title">Графит</h3>
+											</div>
+										</div>
+									</div>
+									<div class="slide-calculator__content content-slide-calculator">
+										<div class="content-slide-calculator__sale-body">
+											<p>ваша скидка </p>
+											<di class="content-slide-calculator__sale-number-body">
+												<span>0% </span>
+												<div class="content-slide-calculator__sale-arrows arrows discount__arrows">
+													<svg class="arrow arrow_animation" width="10" height="10" viewBox="0 0 10 10" fill="none">
+														<path d="M5 0L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 0Z" fill="#44bc75"></path>
+														<path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#44bc75"></path>
+													</svg>
+												</div>
+											</di>
+										</div>
+										<div class="content-slide-calculator__worker">
+											<div class="content-slide-calculator__avatar"><img src="img/calc/avatar.webp" alt="avatar"></div>
+											<div class="content-slide-calculator__date">
+												<div class="content-slide-calculator__name">Адам</div>
+												<div class="content-slide-calculator__job-title">старший менеджер</div>
+											</div>
+										</div>
+										<div class="content-slide-calculator__text">
+											<p>Завод GARD производит пустотелые блоки с неповторимым дизайном по методологии
+												покраски Колормикс (ColorMix) с полной покраской бетона на всю глубину:</p>
+										</div>
+										<div class="content-slide-calculator__bonus">
+											<img src="img/calc/sale.png" alt="#">
+											<span>скидка 5%</span>
+
+										</div>
+
+									</div>
+								</div>
+								<!-- 2 слайд -->
+								<div class="calculator__slide  swiper-slide slide-calculator slide-calculator--two slide-main-block">
+									<h3 class="slide-calculator__title">Какая высота забора (столбов) Вам нужна?</h3>
+									<div class="slide-calculator__wrapper">
+
+										<div class="slide-calculator__items">
+
+											<div class="slide-calculator__body">
+												<div class="radio ">
+													<div class="radio__item ">
+														<input data-required id="o_8" class="radio__input " checked type="radio" value="1" name="option-2">
+														<label for="o_8" class="radio__label "><span class="radio__text ">1,66
+																м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_9" class="radio__input " type="radio" value="1" name="option-2">
+														<label for="o_9" class="radio__label "><span class="radio__text ">1,86
+																м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_10" class="radio__input " type="radio" value="1" name="option-2">
+														<label for="o_10" class="radio__label "><span class="radio__text ">2,06
+																м</span></label>
+													</div>
+												</div>
+											</div>
+											<div class="slide-calculator__image"><img src="img/calc/slide-two/01.webp" alt="#">
+											</div>
+										</div>
+										<div class="slide-calculator__content content-slide-calculator">
+											<div class="content-slide-calculator__sale-body">
+												<p>ваша скидка </p>
+												<di class="content-slide-calculator__sale-number-body">
+													<span>1% </span>
+													<div class="content-slide-calculator__sale-arrows arrows discount__arrows">
+														<svg class="arrow arrow_animation" width="10" height="10" viewBox="0 0 10 10" fill="none">
+															<path d="M5 0L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 0Z" fill="#44bc75"></path>
+															<path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#44bc75"></path>
+														</svg>
+													</div>
+												</di>
+											</div>
+											<div class="content-slide-calculator__worker">
+												<div class="content-slide-calculator__avatar"><img src="img/calc/avatar.webp" alt="avatar"></div>
+												<div class="content-slide-calculator__date">
+													<div class="content-slide-calculator__name">Адам</div>
+													<div class="content-slide-calculator__job-title">старший менеджер</div>
+												</div>
+											</div>
+											<div class="content-slide-calculator__text">
+												<p>Столбы для забора, построенные из блоков, прекрасно сочетаются с разнообразными
+													элементами ограждений. Это позволяет создать забор, подходящий к дизайну вашего
+													дома</p>
+											</div>
+											<div class="content-slide-calculator__bonus">
+												<img src="img/calc/sale.png" alt="#">
+												<span>скидка 5%</span>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<!-- 3 слайд -->
+								<div class="calculator__slide  swiper-slide slide-calculator slide-calculator--two slide-main-block">
+									<h3 class="slide-calculator__title">Какая высота пролета (между столбами)?</h3>
+									<div class="slide-calculator__wrapper">
+
+										<div class="slide-calculator__items">
+											<div class="slide-calculator__body">
+												<div class="radio ">
+													<div class="radio__item ">
+														<input id="o_11" class="radio__input " checked type="radio" value="1" name="option-3">
+														<label for="o_11" class="radio__label "><span class="radio__text ">26 см (1
+																блок)</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_12" class="radio__input " type="radio" value="1" name="option-3">
+														<label for="o_12" class="radio__label "><span class="radio__text ">46 см (2
+																блок)</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_13" class="radio__input " type="radio" value="1" name="option-3">
+														<label for="o_13" class="radio__label "><span class="radio__text ">66 см (3
+																блок)</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_14" class="radio__input " type="radio" value="1" name="optio-3">
+														<label for="o_14" class="radio__label "><span class="radio__text ">86 см (4
+																блок)</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_15" class="radio__input " type="radio" value="1" name="option-3">
+														<label for="o_15" class="radio__label "><span class="radio__text ">Сплошной</span></label>
+													</div>
+												</div>
+											</div>
+											<div class="slide-calculator__image"><img src="img/calc/slide-two/02.webp" alt="#">
+											</div>
+										</div>
+										<div class="slide-calculator__content content-slide-calculator">
+											<div class="content-slide-calculator__sale-body">
+												<p>ваша скидка </p>
+												<di class="content-slide-calculator__sale-number-body">
+													<span>2% </span>
+													<div class="content-slide-calculator__sale-arrows arrows discount__arrows">
+														<svg class="arrow arrow_animation" width="10" height="10" viewBox="0 0 10 10" fill="none">
+															<path d="M5 0L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 0Z" fill="#44bc75"></path>
+															<path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#44bc75"></path>
+														</svg>
+													</div>
+												</di>
+											</div>
+											<div class="content-slide-calculator__worker">
+												<div class="content-slide-calculator__avatar"><img src="img/calc/avatar.webp" alt="avatar"></div>
+												<div class="content-slide-calculator__date">
+													<div class="content-slide-calculator__name">Адам</div>
+													<div class="content-slide-calculator__job-title">старший менеджер</div>
+												</div>
+											</div>
+											<div class="content-slide-calculator__text">
+												<p>Сплошной забор из пустотелых блоков обладает хорошими шумоизоляционными
+													свойствами</p>
+											</div>
+											<div class="content-slide-calculator__bonus">
+												<img src="img/calc/sale.png" alt="#">
+												<span>скидка 5%</span>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<!-- 4 слайд -->
+								<div class="calculator__slide  swiper-slide slide-calculator slide-calculator--two slide-main-block">
+									<h3 class="slide-calculator__title">Какая высота пролета (между столбами)?</h3>
+									<div class="slide-calculator__wrapper">
+
+										<div class="slide-calculator__items">
+											<div class="slide-calculator__body">
+												<div class="radio ">
+													<div class="radio__item ">
+														<input id="o_16" class="radio__input " checked type="radio" value="1" name="option-4">
+														<label for="o_16" class="radio__label "><span class="radio__text ">до 30
+																м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_17" class="radio__input " type="radio" value="1" name="option-4">
+														<label for="o_17" class="radio__label "><span class="radio__text ">от 30 м до
+																100 м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_18" class="radio__input " type="radio" value="1" name="option-4">
+														<label for="o_18" class="radio__label "><span class="radio__text ">более 100
+																м</span></label>
+													</div>
+
+												</div>
+											</div>
+											<div class="slide-calculator__image"><img src="img/calc/slide-two/03.webp" alt="#">
+											</div>
+										</div>
+										<div class="slide-calculator__content content-slide-calculator">
+											<div class="content-slide-calculator__sale-body">
+												<p>ваша скидка </p>
+												<di class="content-slide-calculator__sale-number-body">
+													<span>3% </span>
+													<div class="content-slide-calculator__sale-arrows arrows discount__arrows">
+														<svg class="arrow arrow_animation" width="10" height="10" viewBox="0 0 10 10" fill="none">
+															<path d="M5 0L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 0Z" fill="#44bc75"></path>
+															<path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#44bc75"></path>
+														</svg>
+													</div>
+												</di>
+											</div>
+											<div class="content-slide-calculator__worker">
+												<div class="content-slide-calculator__avatar"><img src="img/calc/avatar.webp" alt="avatar"></div>
+												<div class="content-slide-calculator__date">
+													<div class="content-slide-calculator__name">Адам</div>
+													<div class="content-slide-calculator__job-title">старший менеджер</div>
+												</div>
+											</div>
+											<div class="content-slide-calculator__text">
+												<p>За счет пустотности блока в нем можно прокладывать различные коммуникации.
+													Например, провода под освещение или автоматические откатные ворота</p>
+											</div>
+											<div class="content-slide-calculator__bonus">
+												<img src="img/calc/sale.png" alt="#">
+												<span>скидка 5%</span>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<!-- 5 слайд -->
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<h5 class="slide-calculator__title">Какой цвет заборных блоков Вам нужен??</h5>
+										<div class="options">
+											<div class="options__item">
+												<input data-required id="o_19" class="options__input input" checked type="radio" value="1" name="option-5">
+												<label for="o_19" class="options__label">
+													<div class="options__text"><img src="img/calc/slide-view/01.webp" alt="#"></div>
+
+												</label>
+												<h3 class="options__title">с 1 блоков по бокам</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_20" class="options__input input" checked type="radio" value="1" name="option-5">
+												<label for="o_20" class="options__label">
+													<div class="options__text"><img src="img/calc/slide-view/02.webp" alt="#"></div>
+
+												</label>
+												<h3 class="options__title">с 1 блоков по бокам</h3>
+											</div>
+
+
+										</div>
+									</div>
+									<div class="slide-calculator__content content-slide-calculator">
+										<div class="content-slide-calculator__sale-body">
+											<p>ваша скидка </p>
+											<di class="content-slide-calculator__sale-number-body">
+												<span>3% </span>
+												<div class="content-slide-calculator__sale-arrows arrows discount__arrows">
+													<svg class="arrow arrow_animation" width="10" height="10" viewBox="0 0 10 10" fill="none">
+														<path d="M5 0L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 0Z" fill="#44bc75"></path>
+														<path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#44bc75"></path>
+													</svg>
+												</div>
+											</di>
+										</div>
+										<div class="content-slide-calculator__worker">
+											<div class="content-slide-calculator__avatar"><img src="img/calc/avatar.webp" alt="avatar"></div>
+											<div class="content-slide-calculator__date">
+												<div class="content-slide-calculator__name">Адам</div>
+												<div class="content-slide-calculator__job-title">старший менеджер</div>
+											</div>
+										</div>
+										<div class="content-slide-calculator__text">
+											<p>Бетонные блоки Gard — прочное и красивое ограждение вашего участка в кратчайшие
+												сроки благодаря легкости монтажа</p>
+										</div>
+										<div class="content-slide-calculator__bonus">
+											<img src="img/calc/sale.png" alt="#">
+											<span>скидка 5%</span>
+
+										</div>
+
+									</div>
+								</div>
+								<!-- 6 слайд -->
+								<div class="calculator__slide  swiper-slide slide-calculator slide-calculator--two slide-main-block">
+									<h3 class="slide-calculator__title">Какая ширина ворот?</h3>
+									<div class="slide-calculator__wrapper">
+
+										<div class="slide-calculator__items">
+											<div class="slide-calculator__body">
+												<div class="radio ">
+													<div class="radio__item ">
+														<input id="o_25" class="radio__input " checked type="radio" value="1" name="option-6">
+														<label for="o_25" class="radio__label "><span class="radio__text ">3,5
+																м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_21" class="radio__input " type="radio" value="1" name="option-6">
+														<label for="o_21" class="radio__label "><span class="radio__text ">4
+																м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_22" class="radio__input " type="radio" value="1" name="option-6">
+														<label for="o_22" class="radio__label "><span class="radio__text ">4,5
+																м</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_23" class="radio__input " type="radio" value="1" name="option-6">
+														<label for="o_23" class="radio__label "><span class="radio__text ">Пока не
+																знаю</span></label>
+													</div>
+													<div class="radio__item ">
+														<input id="o_24" class="radio__input " type="radio" value="1" name="option-6">
+														<label for="o_24" class="radio__label "><span class="radio__text ">Ворот не
+																будет</span></label>
+													</div>
+												</div>
+											</div>
+											<div class="slide-calculator__image"><img src="img/calc/slide-two/04.webp" alt="#">
+											</div>
+										</div>
+										<div class="slide-calculator__content content-slide-calculator">
+											<div class="content-slide-calculator__sale-body">
+												<p>ваша скидка </p>
+												<di class="content-slide-calculator__sale-number-body">
+													<span>4% </span>
+													<div class="content-slide-calculator__sale-arrows arrows discount__arrows">
+														<svg class="arrow arrow_animation" width="10" height="10" viewBox="0 0 10 10" fill="none">
+															<path d="M5 0L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 0Z" fill="#44bc75"></path>
+															<path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#44bc75"></path>
+														</svg>
+													</div>
+												</di>
+											</div>
+
+											<div class="content-slide-calculator__bonus">
+												<img src="img/calc/sale.png" alt="#">
+												<span>скидка 5%</span>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<!-- Конечная страница !форма! -->
+								<div class="calculator__slide swiper-slide slide-calculator  slide-main-block">
+									<div class="slide-calculator-block__wrapper">
+										<div class="slide-calculator-block__content">
+											<h3 class="slide-calculator-block__title-last">Заполните форму и отправьте заявку ,
+												чтобы
+												забронировать скидку</h3>
+											<p class="slide-calculator-block__text">В ближайшее время наш менеджер вам перезвонит,
+												чтобы
+												уточнить некоторые детали. Потом отправит вам смету</p>
+											<div class="slide-calculator-block__subtitle">Ваши бонусы</div>
+											<div class="content-slide-calculator__bonus">
+												<img src="img/calc/sale.png" alt="#">
+												<span>скидка 5%</span>
+
+											</div>
+											<div class="slide-calculator-block__arrow"> <svg data-v-074b666c="" width="64" height="64" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+													<g data-v-074b666c="">
+														<path data-v-074b666c="" d="m63.386,16.193l.002-.002c0.002-0.003 0.004-0.006 0.006-0.01 0.172-0.195 0.298-0.43 0.399-0.678 0.032-0.076 0.053-0.148 0.076-0.225 0.058-0.191 0.094-0.389 0.106-0.596 0.006-0.076 0.018-0.148 0.016-0.226 0-0.04 0.01-0.076 0.008-0.115-0.014-0.239-0.062-0.47-0.136-0.687-0.006-0.023-0.022-0.041-0.03-0.064-0.088-0.239-0.214-0.451-0.363-0.645-0.021-0.027-0.028-0.063-0.05-0.09l-10.311-12.146c-0.789-0.93-2.084-0.948-2.894-0.037-0.808,0.91-0.823,2.402-0.032,3.334l5.558,6.549c-8.121-1.076-16.104,0.633-16.481,0.717-24.646,4.467-42.087,27.227-38.88,50.736 0.159,1.164 1.028,1.992 2.019,1.992 0.106,0 0.212-0.009 0.32-0.027 1.116-0.203 1.878-1.409 1.704-2.696-2.857-20.94 13.056-41.282 35.537-45.358 0.103-0.024 8.351-1.794 16.117-0.574l-8.577,5.093c-1.005,0.598-1.398,2.02-0.881,3.177 0.516,1.159 1.748,1.608 2.756,1.017l13.52-8.028c0.183-0.111 0.347-0.25 0.491-0.411z">
+														</path>
+													</g>
+												</svg>
+											</div>
+										</div>
+										<div class="slide-calculator-block__form" action="files/sendmail/sendmail.php" method="POST">
+											<div class="slide-calculator-block__sale-body">
+												<div class="slide-calculator-block__sale-text">Ваша скидка</div>
+												<div class="slide-calculator-block__number">5%</div>
+											</div>
+											<label class="slide-calculator-block__label">Введите имя</label>
+											<input data-required type="text" name="form[name]" data-error="Заполните поля" placeholder="Имя" class="slide-calculator-block__input input">
+											<label class="slide-calculator-block__label">Введите телефон</label>
+											<input data-required id="phone" type="text" name="form[phone]" data-error="Заполните поля" placeholder="+375 (__) ___-__-__" class="slide-calculator-block__input form__input form-opportunity__input input">
+											<button type="submit" class="slide-calculator-block__button">Отправить заявку</button>
+											<div class="checkbox">
+												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я соглашаюсь
+														на <a href="#">обработку персональных данных</a> согласно <a href="#">политике
+															конфиденциальности</a></span></label>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+
+
+							</form>
+
+							<div id="progress" class="calculator__progress">
+								<div class="calculator__progress-body">
+									<div class="calculator__pagination swiper-pagination"></div>
+									<div class="fraction-controll">
+										<span class="fraction-controll__current">01</span>
+										<span class="fraction-controll__all">10</span>
+										<div class="fraction-controll__progress"><span>Готово:</span> 0%</div>
+									</div>
+								</div>
+								<div class="calculator__button-body">
+									<div type="button" class="calculator__button-next swiper-button-next">Далее <svg class="mdi-icon mdi-24px" viewBox="0 0 24 24">
+											<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" stroke-width="0" fill-rule="nonzero"></path>
+										</svg> </div>
+
+									<div type="button" class="calculator__button-prev swiper-button-prev">
+										<svg class="mdi-icon mdi-24px" viewBox="0 0 24 24">
+											<path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" stroke-width="0" fill-rule="nonzero"></path>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<div class="calculator__button-mob">
+				<a href="#" data-popup="#popup-calc">Пройти тест</a>
+			</div>
+			<section id="concrete" class="page__concrete concrete">
+				<div class="concrete__container">
+					<h2 class="concrete__title">Модульные бетонные заборные блоки <strong>GARD</strong> для вашего участка
+					</h2>
+					<div class="concrete__information information-concrete">
+						<div class="information-concrete__body">
+							<div class="information-concrete__column">
+								<p class="information-concrete__text"><strong>Размеры блока, мм:</strong> 500 х 200 х 200</p>
+								<p class="information-concrete__text"><strong>Количество на 1 поддоне:</strong> 48 шт.</p>
+							</div>
+							<div class="information-concrete__column">
+								<p class="information-concrete__text"><strong>Способ производства:</strong>Вибропресс</p>
+								<p class="information-concrete__text"><strong>Вес поддона:</strong> 1152 кг</p>
+							</div>
+							<div class="information-concrete__column">
+								<p class="information-concrete__text"><strong>Вес 1 шт.:</strong>24 кг</p>
+								<p class="information-concrete__text"><strong>Срок службы:</strong>до 50 лет</p>
+							</div>
+						</div>
+						<img data-watch data-watch-once class="information-concrete__image" src="img/concrete/sale.svg" alt="#">
+					</div>
+					<div class="concrete__body">
+						<!-- Оболонка слайдера -->
+						<div class="concrete__content">
+							<div class="concrete__slider swiper">
+								<!-- Частина слайдера, що рухається -->
+								<div data-gallery class="concrete__wrapper swiper-wrapper">
+									<a href="img/concrete/slider/01.png" class="concrete__slide swiper-slide">
+										<img src="img/concrete/slider/01.png">
+									</a>
+									<a href="img/concrete/slider/02.jpg" class="concrete__slide swiper-slide">
+										<img src="img/concrete/slider/02.jpg">
+									</a>
+									<a href="img/concrete/slider/03.png" class="concrete__slide swiper-slide">
+										<img src="img/concrete/slider/03.png">
+									</a>
+								</div>
+								<div class="concrete__slider-navicatons">
+									<button type="button" class="concrete__slider-button-prev swiper-button-prev"></button>
+									<button type="button" class="concrete__slider-button-next swiper-button-next"></button>
+								</div>
+							</div>
+							<ul class="concrete__list">
+								<li class="concrete__link"><strong>Гладкая поверхность,</strong> т.к. используем сеянный мытый
+									песок</li>
+								<li class="concrete__link"><strong>Стойкий цвет</strong> благодаря лучшим красителям в РБ</li>
+								<li class="concrete__link">Производство по европейским стандартам <strong> ГОСТ</strong></li>
+
+							</ul>
+						</div>
+
+						<div class="concrete__options options-concrete">
+							<h3 class="options-concrete__title">Варианты цветов:</h3>
+							<div class="options-concrete__items">
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/01.png" alt="#">
+									<div class="options-concrete__name">Техас</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/02.png" alt="#">
+									<div class="options-concrete__name">Мардо</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/03.png" alt="#">
+									<div class="options-concrete__name">Туман</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/04.png" alt="#">
+									<div class="options-concrete__name">Сангрия</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/05.png" alt="#">
+									<div class="options-concrete__name">Графит</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/06.webp" alt="#">
+									<div class="options-concrete__name">Шоколад</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/07.png" alt="#">
+									<div class="options-concrete__name">Контраст</div>
+								</div>
+								<div class="options-concrete__item">
+									<img class="options-concrete__image" src="img/concrete/options/08.png" alt="#">
+									<div class="options-concrete__name">Дым</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="concrete__button-body button-body button-body--hit">
+						<a data-popup="#popup-two" class="concrete__button button button--hit">
+							Подробнее про блоки Gard
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="advantages" class="page__advantages advantages">
+				<div class="advantages__container">
+					<div class="advantages__title">Наши преимущества</div>
+					<div class="advantages__items">
+						<div class="advantages__item advantages__item--one ">
+							<div class="advantages__icon"> <img src="img/advantages/01.svg" alt="#"></div>
+							<p class="advantages__subtitle advantages__subtitle--one">Единственные
+								на Российском рынке</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"> <img src="img/advantages/02.svg" alt="#"></div>
+							<p class="advantages__subtitle">Двойное вибропрессование</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"> <img src="img/advantages/03.svg" alt="#"></div>
+							<p class="advantages__subtitle">Цвет колормикс</p>
+							<p class="advantages__text"></p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"> <img src="img/advantages/04.svg" alt="#"></div>
+							<p class="advantages__subtitle">Цвет колормикс</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"> <img src="img/advantages/05.svg" alt="#"></div>
+							<p class="advantages__subtitle">Цвет колормикс</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"> <img src="img/advantages/06.svg" alt="#"></div>
+							<p class="advantages__subtitle">Цвет колормикс</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="opportunity" class="page__opportunity opportunity">
+				<div class="opportunity__container">
+					<h2 class="opportunity__title">Уникальная возможность оформить заказ заборных блоков со скидкой 5%</h2>
+					<div class="opportunity__body">
+						<img class="opportunity__image" src="img/opportunity/01.png" alt="#">
+						<form data-popup-message="#popup-message" data-ajax class="opportunity__form form-opportunity" action="files/sendmail/sendmail.php" method="POST">
+							<h3 class="form-opportunity__title">Сегодня дарим скидку 5% Первым 10 заказчикам!</h3>
+							<div class="form-opportunity__subtitle">*при покупке от 250 000 руб.</div>
+							<div class="form-opportunity__clock-body">
+								<div class="form-opportunity__clock-number">
+									<div>00 <span>дней</span></div> : <div>21<span>час</span></div> : <div>07<span>минут</span>
+									</div>
+								</div>
+								<!-- <div class="form-opportunity__clock-text">
+								</div> -->
+							</div>
+							<div class="form-opportunity__text">Скидка будет забронирована на ваш номер телефона, ей можно
+								воспользоваться в течение 3 дней</div>
+							<input data-required id="phone" type="text" name="form[phone]" data-error="Заполните поле" placeholder="+375 (__) ___-__-__" class="form-opportunity__input input">
+							<div class="form-opportunity__button-body button-body button-body--hit"><button type="submit" class="form-opportunity__button button button--hit">получить скиндку 5%</button></div class="">
+						</form>
+						<img class="opportunity__image" src="img/opportunity/02.png" alt="#">
+						<img class="opportunity__image" src="img/opportunity/03.png" alt="#">
+						<img class="opportunity__image" src="img/opportunity/04.png" alt="#">
+						<img class="opportunity__image" src="img/opportunity/05.png" alt="#">
+						<img class="opportunity__image" src="img/opportunity/06.png" alt="#">
+
+					</div>
+					<img data-watch class="opportunity__present" src="img/opportunity/pdr.png" alt="#">
+				</div>
+			</section>
+			<section id="catalog" class="page__catalog catalog">
+				<div class="catalog__container">
+					<h2 class="catalog__title">
+						Каталог заборных блоков от завода <strong>GARD</strong></h2>
+					<!-- Оболонка слайдера -->
+					<div class="catalog__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="catalog__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="catalog__slide swiper-slide">
+								<img class="catalog__slide-image" src="img/catalog/01.webp" alt="#">
+								<h3 class="catalog__slide-title">Блок пролетный ‒ Мардо</h3>
+								<ul class="catalog__slide-list">
+									<li class="catalog__slide-link">
+										<strong>Размеры, мм:</strong> 500 х 200 х 200
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Способ производства:</strong> Вибропресс
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес 1 шт.:</strong>
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Количество на 1 поддоне:</strong> 48 шт.
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес поддона:</strong> 1152 кг
+									</li>
+								</ul>
+								<div class="catalog__button-body button-body  button-body--hit">
+									<a data-popup="#popup" class="catalog__button button catalog__button button--catalog">Быстрый
+										заказ</a>
+								</div>
+
+
+							</div>
+							<div class="catalog__slide swiper-slide">
+								<img class="catalog__slide-image" src="img/catalog/02.png" alt="#">
+								<h3 class="catalog__slide-title">Блок пролетный ‒ Туман</h3>
+								<ul class="catalog__slide-list">
+									<li class="catalog__slide-link">
+										<strong>Размеры, мм:</strong> 500 х 200 х 200
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Способ производства:</strong> Вибропресс
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес 1 шт.:</strong>
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Количество на 1 поддоне:</strong> 48 шт.
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес поддона:</strong> 1152 кг
+									</li>
+								</ul>
+								<div class="catalog__button-body button-body  button-body--hit">
+									<a data-popup="#popup" class="catalog__button button catalog__button button--catalog">Быстрый
+										заказ</a>
+								</div>
+
+
+
+							</div>
+							<div class="catalog__slide swiper-slide">
+								<img class="catalog__slide-image" src="img/catalog/03.png" alt="#">
+								<h3 class="catalog__slide-title">Блок пролетный ‒ Сангрия</h3>
+								<ul class="catalog__slide-list">
+									<li class="catalog__slide-link">
+										<strong>Размеры, мм:</strong> 500 х 200 х 200
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Способ производства:</strong> Вибропресс
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес 1 шт.:</strong>
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Количество на 1 поддоне:</strong> 48 шт.
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес поддона:</strong> 1152 кг
+									</li>
+								</ul>
+								<div class="catalog__button-body button-body  button-body--hit">
+									<a data-popup="#popup" class="catalog__button button catalog__button button--catalog">Быстрый
+										заказ</a>
+								</div>
+
+
+							</div>
+							<div class="catalog__slide swiper-slide">
+								<img class="catalog__slide-image" src="img/catalog/02.png" alt="#">
+								<h3 class="catalog__slide-title">Блок пролетный ‒ Туман</h3>
+								<ul class="catalog__slide-list">
+									<li class="catalog__slide-link">
+										<strong>Размеры, мм:</strong> 500 х 200 х 200
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Способ производства:</strong> Вибропресс
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес 1 шт.:</strong>
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Количество на 1 поддоне:</strong> 48 шт.
+									</li>
+									<li class="catalog__slide-link">
+										<strong>Вес поддона:</strong> 1152 кг
+									</li>
+								</ul>
+								<div class="catalog__button-body button-body  button-body--hit">
+									<a data-popup="#popup" class="catalog__button button catalog__button button--catalog">Быстрый
+										заказ</a>
+								</div>
+
+
+
+							</div>
+						</div>
+
+
+					</div>
+					<div class="catalog__navigations-buttons">
+						<button type="button" class="catalog-button-prev  swiper-button-prev"><img src="img/concrete/slider/arrow.svg" alt="#"></button>
+						<button type="button" class="catalog-button-next swiper-button-next"><img src="img/concrete/slider/arrow.svg" alt="#"></button>
+					</div>
+				</div>
+			</section>
+			<section id="questions" class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__title">
+						Ответы на ваши вопросы
+					</div>
+
+					<div data-spollers data-one-spoller class="spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title cercle">Можно ли произвести однотонный
+								цвет?
+								<div class="spollers__svg">
+
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+
+							</button>
+							<div class="spollers__body">Конечно. Можно заказать цвет на выбор: коричневый, черные, серые,
+								красные, желтый.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Прокрашен ли верхний слой блока?
+								<div class="spollers__svg">
+
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</button>
+							<div class="spollers__body">
+								Нет. Мы окрашиваем блоки полностью в массе, чтобы со временем они не теряли свой хороший внешний
+								вид и выглядели красиво со всех сторон.Конечно. Можно заказать цвет на выбор: коричневый,
+								черные, серые, красные, желтый.
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Можно ли блок использовать для столбов?
+
+								<div class="spollers__svg">
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</button>
+							<div class="spollers__body">Да, блоки предназначены и для столбов, и для пролетов.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">В чем заключается польская технология
+								производства? <div class="spollers__svg">
+
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div></button>
+							<div class="spollers__body">Завод GARD производит пустотелые блоки с неповторимым дизайном по
+								методологии покраски Колормикс (ColorMix с полной) с покраской бетона на всю глубину. Столбы для
+								забора, построенные из блоков, прекрасно сочетаются с разнообразными элементами ограждений, что
+								позволяет создать забор подходящий к дизайну вашего дома. Цветовая гамма дизайнерских блоков
+								разрабатывается с учетом актуальных тенденций.Конечно. Можно заказать цвет на выбор: коричневый,
+								черные, серые, красные, желтый.
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Можно ли прокладывать коммуникации в
+								блоках?
+
+								<div class="spollers__svg">
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</button>
+							<div class="spollers__body">Да. За счет пустотности блока в нем можно прокладывать различные
+								коммуникации. Например, провода под освещение или автоматические откатные ворота.Конечно. Можно
+								заказать цвет на выбор: коричневый, черные, серые, красные, желтый.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="form" class="page__form form">
+				<img class="form__image" src="img/hero/01.png" alt="#">
+				<img class="form__image form__image--rigth" src="img/form/02.png" alt="#">
+				<div class="form__container">
+					<div class="form__content content-form">
+						<h2 class="content-form__title">Остались вопросы?</h2>
+						<p class="content-form__text"><strong>Если у вас остались какие‑то вопросы, то заполните, пожалуйста
+								форму</strong></p>
+						<p class="content-form__text">Наш специалист свяжется с вами и с радостью ответит на все возникшие
+							вопросы</p>
+						<div class="content-form__video">
+							<img src="img/form/03.png" alt="#">
+							<a data-popup-youtube="Z3Xe0cFZkMY" data-popup="#video" class="content-form__play-button-body">
+								<span class="content-form__play-button"></span>
+							</a>
+						</div>
+
+
+
+					</div>
+					<form data-popup-message="#popup-message" data-ajax class="form__form-body" action="files/sendmail/sendmail.php" method="POST">
+						<input data-required type="text" name="form[questions]" data-error="Заполните все поля" placeholder="Напишите Ваш вопрос" class="form__input  form-opportunity__input input">
+						<input data-required type="text" name="form[name]" data-error="Заполните все поля" placeholder="Ваше имя" class="form__input input">
+						<input data-required id="phone" type="text" name="form[phone]" data-error="Заполните все поля" placeholder="+375 (__) ___-__-__" class="form__input form-opportunity__input input">
+
+						<div class="form__button-body button-body button-body--hit"><button type="submit" class="form__button button button--hit">Спросить</button></div>
+					</form>
+				</div>
+			</section>
+			<section id="reviews" class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="catalog__title">
+						Отзывы</h2>
+					<!-- Оболонка слайдера -->
+					<div class="catalog__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="catalog__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="catalog__slide reviews-slide swiper-slide">
+								<div class="reviews-slide__avtar-body">
+									<img class="reviews-slide__avatar" src="img/reviews/01.jpeg" alt="#">
+									<div class="reviews-slide__date">
+										<div class="reviews-slide__name">Елизавета</div>
+										<div class="reviews-slide__rating"><img src="img/reviews/rating/02.svg" alt="#"></div>
+									</div>
+								</div>
+								<div class="reviews-slide__text">
+									<p>Приезжали на производство, очень грамотный специалист нас встретил и все рассказал.
+										Заказали блоки цвета капучино. Заказ привезли вовремя. Остались безумно довольны!!
+										Спасибо!!!</p>
+								</div>
+							</div>
+							<div class="catalog__slide reviews-slide swiper-slide">
+								<div class="reviews-slide__avtar-body">
+									<img class="reviews-slide__avatar" src="img/reviews/02.jpeg" alt="#">
+									<div class="reviews-slide__date">
+										<div class="reviews-slide__name">Анна</div>
+										<div class="reviews-slide__rating"><img src="img/reviews/rating/02.svg" alt="#"></div>
+									</div>
+								</div>
+								<div class="reviews-slide__text">
+									<p>Заказ был оформлен в офисе, менеджер Павел все подробно нам рассказал. Срок изготовления
+										составил 3 недели. Все соседи обзавидовались такому забору!!! спасибо вам за такую
+										красоту!</p>
+								</div>
+							</div>
+							<div class="catalog__slide reviews-slide swiper-slide">
+								<div class="reviews-slide__avtar-body">
+									<img class="reviews-slide__avatar" src="img/reviews/03.jpeg" alt="#">
+									<div class="reviews-slide__date">
+										<div class="reviews-slide__name">Сергей</div>
+										<div class="reviews-slide__rating"><img src="img/reviews/rating/02.svg" alt="#"></div>
+									</div>
+								</div>
+								<div class="reviews-slide__text">
+									<p>Отличные ребята!!! Рекомендую!!! Не подвели меня по срокам!!!</p>
+								</div>
+							</div>
+							<div class="catalog__slide reviews-slide swiper-slide">
+								<div class="reviews-slide__avtar-body">
+									<img class="reviews-slide__avatar" src="img/reviews/04.jpeg" alt="#">
+									<div class="reviews-slide__date">
+										<div class="reviews-slide__name">Владимир</div>
+										<div class="reviews-slide__rating"><img src="img/reviews/rating/01.svg" alt="#"></div>
+									</div>
+								</div>
+								<div class="reviews-slide__text">
+									<p>Лучшая цена и качество заборных блоков. Редко встретишь сейчас такое качество!!!</p>
+								</div>
+							</div>
+							<div class="catalog__slide reviews-slide swiper-slide">
+								<div class="reviews-slide__avtar-body">
+									<img class="reviews-slide__avatar" src="img/reviews/05.jpeg" alt="#">
+									<div class="reviews-slide__date">
+										<div class="reviews-slide__name">Егор</div>
+										<div class="reviews-slide__rating"><img src="img/reviews/rating/01.svg" alt="#"></div>
+									</div>
+								</div>
+								<div class="reviews-slide__text">
+									<p>Заказывал 450 блоков для забора! Менеджер Владислав все четко объяснил при оформлении
+										заказа и помог рассчитать нужное нам количество блоков! остался доволен!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__navigations-buttons">
+						<button type="button" class="catalog-button-prev  swiper-button-prev"><img src="img/concrete/slider/arrow.svg" alt="#"></button>
+						<button type="button" class="catalog-button-next swiper-button-next"><img src="img/concrete/slider/arrow.svg" alt="#"></button>
+					</div>
+
+				</div>
+			</section>
+			<section id="gallery" class="page__gallery gallery">
+				<div class="gallery__container">
+					<h2 class="gallery__title">Галерея работ</h2>
+					<!-- Оболонка слайдера -->
+					<div class="gallery__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="gallery__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div data-gallery class="gallery__slide swiper-slide">
+								<a href="img/gallery/01.jpg" class="gallery__slide-image">
+									<img alt="Превью" src="img/gallery/01.jpg" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/02.png" class="gallery__slide-image">
+									<img alt="Превью" src="img/gallery/02.png" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/03.jpg" class="gallery__slide-image">
+									<img alt="Превью" src="img/gallery/03.jpg" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/04.jpg" class="gallery__slide-image">
+									<img alt="Превью" src="img/gallery/04.jpg" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/05.png" class="gallery__slide-image">
+									<img alt="Превью" src="img/gallery/05.png" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/06.jpg" class="gallery__slide-image">
+									<img alt="Превью" src="img/gallery/06.jpg" class="gallery__slide-preview">
+								</a>
+							</div>
+							<div data-gallery class="gallery__slide  swiper-slide">
+								<a href="img/gallery/01.jpg" class="gallery__slide-image gallery__slide-image--two">
+									<img alt="Превью" src="img/gallery/01.jpg" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/02.png" class="gallery__slide-image gallery__slide-image--two">
+									<img alt="Превью" src="img/gallery/02.png" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/03.jpg" class="gallery__slide-image gallery__slide-image--two">
+									<img alt="Превью" src="img/gallery/03.jpg" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/04.jpg" class="gallery__slide-image gallery__slide-image--two">
+									<img alt="Превью" src="img/gallery/04.jpg" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/05.png" class="gallery__slide-image gallery__slide-image--two">
+									<img alt="Превью" src="img/gallery/05.png" class="gallery__slide-preview">
+								</a>
+								<a href="img/gallery/06.jpg" class="gallery__slide-image gallery__slide-image--two">
+									<img alt="Превью" src="img/gallery/06.jpg" class="gallery__slide-preview">
+								</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="gallery__navigations-buttons catalog__navigations-buttons">
+						<button type="button" class="gallery__button-prev    catalog-button-prev  swiper-button-prev"><img src="img/concrete/slider/arrow.svg" alt="#"></button>
+						<button type="button" class="gallery__button-next  catalog-button-next swiper-button-next"><img src="img/concrete/slider/arrow.svg" alt="#"></button>
+					</div>
+				</div>
+			</section>
+			<section id="contacts" class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2738dd54d2e64bd3fed0503c1ffc6514894bc6f96f7e40916e772e5db5f633dc&amp;source=constructor" frameborder="0"></iframe></div>
+					<div class="contacts__content">
+						<h2 class="contacts__title">Контакты</h2>
+						<div class="contacts__item">
+							<a class="contacts__icon" href="#"><img src="img/contact/phone.svg" alt="#"></a>
+							<a class="contacts__phone" href="tel:74991103352">+7 499 110-33-52</a>
+							<p class="contacts__text">Прием заявок круглосуточно</p>
+						</div>
+						<div class="contacts__item">
+							<a class="contacts__icon" href="#"><img src="img/contact/local.svg" alt="#"></a>
+							<p class="contacts__text">Московская область, г. Химки, мкр. Сходня, ул. Октябрьская, д. 29</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<a class="footer__logo" href="#"><img src="img/footer/logo.svg" alt="#"></a>
+					<nav class="footer__menu">
+						<ul class="list">
+							<li class="footer__link"><a data-goto=".concrete" href="#">Описание блоков</a></li>
+							<li class="footer__link"><a data-goto=".questions" href="#">Вопросы</a></li>
+							<li class="footer__link"><a data-goto=".advantages" href="#">Преимущества</a></li>
+							<li class="footer__link"><a data-goto=".reviews" href="#">Отзывы</a></li>
+							<li class="footer__link"><a data-goto=".opportunity" href="#">Скидка</a></li>
+							<li class="footer__link"><a data-goto=".gallery" href="#">Галерея</a></li>
+							<li class="footer__link"><a data-goto=".catalog" href="#">Каталог</a></li>
+							<li class="footer__link"><a data-goto=".contacts" href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="footer__buttons">
+						<a class="footer__phone" href="tel:74991103352">+7 499 110-33-52 </a>
+						<div class="footer__button-body button-body">
+							<a data-popup="#popup" class="footer__button button">Быстрый заказ</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__politicy">
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+					<p class="footer__text">© 2023 «Заборные блоки в Москве и области»</p>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241120102005"></script>
+</body>
+
+</html>
